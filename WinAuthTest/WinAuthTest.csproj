@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\ALB\.nuget\packages\corewcf.configurationmanager\0.4.0\contentFiles\any\netstandard2.0\CoreWCF.machine.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreWCF.ConfigurationManager" Version="0.4.0" />
+    <PackageReference Include="CoreWCF.Http" Version="0.4.0" />
+    <PackageReference Include="CoreWCF.Primitives" Version="0.4.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="5.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
